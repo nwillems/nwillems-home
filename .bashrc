@@ -1,4 +1,7 @@
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 #wsd Check for an interactive session
 [ -z "$PS1" ] && return
 
@@ -18,7 +21,6 @@ alias xlinks="xlinks -g"
 PS1='[\u@\h \W]\$ '
 BROWSER="/usr/bin/chromium"; export BROWSER
 EDITOR="/usr/bin/vim"; export EDITOR
-complete -cf sudo man
 
 [ -r /home/nwillems/.bash/bash.bash_completion ] && . /home/nwillems/.bash/bash.bash_completion 
 

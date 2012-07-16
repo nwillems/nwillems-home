@@ -1,0 +1,15 @@
+! URXVT Configuration
+URxvt*scrollBar:        false
+URxvt*background:       white
+URxvt*foreground:       black
+URxvt*underlineColor:   red
+URxvt*color11:          Yellow3
+
+XLoad*background:   /home/nwillems/wallpapers/nwbg.jpg
+
+!ncmpcpp*background:     white
+!ncmpcpp*foreground:     blue
+!ncmpcpp*color11   :     green
+!ncmpcpp*color3    :     tomato
+!ncmpcpp*color2    :     black
+

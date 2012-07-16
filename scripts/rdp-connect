@@ -1,0 +1,1 @@
+rdesktop -g 1024x576 -P -z -x l -r sound:off -u nicwil ixidev01

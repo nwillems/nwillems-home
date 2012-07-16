@@ -1,0 +1,7 @@
+if [ -n "$1" ]
+then
+     echo "Printing document named: $1"
+     cat $1 | ssh willems@ask.diku.dk lp -d s2a -o sides=two-sided-long-edge -o fitplot
+else
+    echo "Missing document"
+fi

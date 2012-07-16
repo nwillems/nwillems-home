@@ -1,0 +1,15 @@
+Config { font = "-*-Fixed-*-R-Normal-*-13-*-*-*-*-*-*"
+       , fgColor = "#dddddd"
+       , position = TopW L 100
+       , commands = 
+           [ Run Cpu ["-L", "3", "-H", "70", "--normal", "green", "--high", "red"] 10
+           , Run Memory ["-t", "Mem: <usedratio>%"] 10
+           , Run Battery ["-L", "10", "-H", "100", "--low", "red", "--high", "green"] 10
+           , Run Date "%_d-%_m-%Y %T" "date" 10
+           , Run Com "~/.xmobar/wireless_status" [] "wireless" 10
+           , Run StdinReader
+           ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ %wireless% | %cpu% | %memory% | %battery% | %date% "
+       }

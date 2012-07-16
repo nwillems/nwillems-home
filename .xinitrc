@@ -6,7 +6,7 @@
 
 # trayer 
 
-setxkbmap dk
+setxkbmap -layout dk
 xsetroot -cursor_name left_ptr 
 xloadimage -onroot /home/nwillems/wallpapers/nwbg.jpg
 
